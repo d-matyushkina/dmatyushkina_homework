@@ -10,7 +10,7 @@ import (
 
 func RemoveElement(nums []int, index int) ([]int, error) {
 	if index < 0 || index >= len(nums) {
-		return nil, errors.New("Индекс должен быть <= размеру слайса и >= 0")
+		return nil, errors.New("Индекс должен быть <= размеру слайса и >= 0") // ошибка-болванка, выводиться не будлет
 	}
 	newNums := make([]int, len(nums)-1)
 

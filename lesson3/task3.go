@@ -9,10 +9,12 @@ import (
 func FirstUnique(s string) rune {
 	counts := make(map[rune]int, len(s))
 	runes := []rune(s)
+
 	for _, r := range runes {
 		counts[r]++
 	}
-	for _, r := range runes { // сохранён порядок исходной строки
+
+	for _, r := range runes {
 		if counts[r] == 1 {
 			return r
 		}
